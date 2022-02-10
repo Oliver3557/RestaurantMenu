@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RestaurantMenuController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="112.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="109.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="92.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="96.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="91.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="62.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="68.0" minHeight="6.0" prefHeight="33.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="34.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <ListView fx:id="courseList" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+        <TextField editable="false" text="Course:" />
+        <TextField editable="false" text="Starter:" GridPane.columnIndex="1" />
+        <TextField editable="false" text="Main:" GridPane.columnIndex="2" />
+        <TextField editable="false" text="Dessert:" GridPane.columnIndex="3" />
+        <ListView fx:id="StarterList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <ListView fx:id="MainList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <ListView fx:id="DessertList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <TextField editable="false" text="Calories Total:" GridPane.rowIndex="2" />
+        <TextField editable="false" text="Total Cost:" GridPane.rowIndex="3" />
+        <TextField editable="false" text="Table Number:" GridPane.rowIndex="4" />
+        <TextField fx:id="totalCalories" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField fx:id="totalCost" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="textTableNo" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Button fx:id="btnSubmit" mnemonicParsing="false" text="Submit" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+        <TextField editable="false" text="Order:" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <TextField editable="false" text="Drinks:" GridPane.columnIndex="4" />
+      <ListView fx:id="DrinksList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <Button fx:id="btnRandom" mnemonicParsing="false" text="Random!" GridPane.rowIndex="6" />
+      <TextField editable="false" text="Number of Diners:" GridPane.rowIndex="5" />
+      <TextField fx:id="textDiners" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button fx:id="btnClear" mnemonicParsing="false" text="Clear" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <ListView fx:id="lvOrder" prefHeight="113.0" prefWidth="186.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+      <Button fx:id="btnAdd" mnemonicParsing="false" text="Add" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+    </children>
+</GridPane>
